@@ -34,6 +34,10 @@ Para realizar com precisão a construção do banco, eu criei as tabelas por ord
 + http://localhost:100/docs
 + Utilizando o diretorio docs para mostrar a tela de documentação da API, mas onde as mesmas estão selecionadas.
 
+### 5. Funções da FASTAPI:
++ Elaborei 4 funções: GET (para listar os alunos cadastrados), POST (para cadastrar os alunos), PUT (para atualizar os dados dos alunos) e DELETE (para deletar os alunos puxando pelo ID).
++ Tentei verificar o motivo da função GET estar dando erro e não consegui até o momento encontrar a solução para o erro.
+
 
 # Considerações finais.
 + Eu tive bastante dificuldade na utilização do Docker e a principal é de como enviar o meu banco de dados para testes.

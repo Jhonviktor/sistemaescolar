@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+    sistema_escolar:
+        image: mysql/mysql-server:8.0.23
+        container_name: sitema_escolar
+        env_file: ./.env
+        environment: 
+            MYSQL_TCP_PORT: $MYSQL_DOCKER_PORT
+            MYSQL_DATABASE: $MYSQL_DATABASE
+            MYSQL_ROOT_HOST: "%"
+        ports: 
+            - $MYSQL_LOCAL_PORT:$MYSQL_DOCKER_PORT
+networks:
+  pokecenter_network:
+    driver: bridge
+
+volumes:
+    sistema_escolar_mysql_dev:
+    sistema_escolar_mysql_config_dev:

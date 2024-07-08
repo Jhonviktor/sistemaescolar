@@ -27,7 +27,7 @@ Para realizar com precisão a construção do banco, eu criei as tabelas por ord
 + docker-compose up -d
 
 ### 3. Comando utilizado para iniciar o servidor do FASTAPI usando o Uvicorn:
-+ uvicorn main:app --host localhost --port 100
++ uvicorn api:app --host localhost --port 100
 #### Observação: para evitar algum conflito com a porta 8000, optei por subir na porta 100.
 
 ### 4. Acessar a API:
